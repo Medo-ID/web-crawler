@@ -1,0 +1,25 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "build": "npx tsc",
+    "dev": "node --watch src/index.ts",
+    "start": "node src/index.ts"
+  },
+  "keywords": [],
+  "author": "Mohamed Idaghdour",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/jsdom": "^27.0.0",
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  },
+  "dependencies": {
+    "jsdom": "^27.4.0"
+  }
+}
