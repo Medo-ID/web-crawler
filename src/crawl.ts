@@ -1,4 +1,5 @@
 import { JSDOM } from "jsdom";
+import { ConcurrentCrawler } from "./ConcurrentCrawler.ts";
 
 export type ExtractedPageData = {
   url: string;
@@ -88,16 +89,20 @@ export function extractPageData(
   html: string,
   pageURL: string
 ): ExtractedPageData {
-  const url = pageURL;
-  const h1 = getH1FromHTML(html);
-  const firstParagraph = getFirstParagraphFromHTML(html);
-  const outgoingLinks = getURLsFromHTML(html, pageURL);
-  const imageURLs = getImagesFromHTML(html, pageURL);
   return {
-    url,
-    h1,
-    firstParagraph,
-    outgoingLinks,
-    imageURLs,
+    url: pageURL,
+    h1: getH1FromHTML(html),
+    firstParagraph: getFirstParagraphFromHTML(html),
+    outgoingLinks: getURLsFromHTML(html, pageURL),
+    imageURLs: getImagesFromHTML(html, pageURL),
   };
+}
+
+export async function crawlSiteAsync(
+  baseURL: string,
+  maxConcurrency = 5,
+  maxPages = 100
+): Promise<Record<string, ExtractedPageData>> {
+  const crawler = new ConcurrentCrawler(baseURL, maxConcurrency, maxPages);
+  return crawler.crawl();
 }
