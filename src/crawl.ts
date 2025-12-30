@@ -100,9 +100,9 @@ export function extractPageData(
 
 export async function crawlSiteAsync(
   baseURL: string,
-  maxConcurrency = 5,
-  maxPages = 100
+  maxConcurrency: number = 5,
+  maxPages: number = 100
 ): Promise<Record<string, ExtractedPageData>> {
   const crawler = new ConcurrentCrawler(baseURL, maxConcurrency, maxPages);
-  return crawler.crawl();
+  return await crawler.crawl();
 }
