@@ -3,7 +3,7 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://opensource.org/licenses/ISC)
 [![Node.js v24](https://img.shields.io/badge/Node.js-v24-green)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue)](https://www.typescriptlang.org/)
-[![npm version](https://img.shields.io/badge/npm-1.0.1-red)](https://www.npmjs.com/package/m-web-crawler)
+[![npm version](https://img.shields.io/badge/npm-1.0.2-red)](https://www.npmjs.com/package/m-web-crawler)
 
 A powerful command-line tool for crawling websites and generating CSV reports. This executable CLI tool efficiently crawls a website starting from a given URL, respecting concurrency limits and page limits.
 
