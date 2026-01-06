@@ -1,2 +1,7 @@
 node_modules/
 *.csv
+src/
+tsconfig.json
+vitest.config.ts
+*.test.ts
+.npmignore
