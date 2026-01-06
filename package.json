@@ -1,5 +1,5 @@
 {
-  "name": "web-crawler",
+  "name": "m-web-crawler",
   "version": "1.0.0",
   "description": "A powerful command-line tool for crawling websites and generating CSV reports",
   "main": "src/index.ts",
