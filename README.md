@@ -3,9 +3,13 @@
 [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://opensource.org/licenses/ISC)
 [![Node.js v24](https://img.shields.io/badge/Node.js-v24-green)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue)](https://www.typescriptlang.org/)
-[![npm version](https://img.shields.io/badge/npm-1.0.0-red)](https://www.npmjs.com/package/web-crawler)
+[![npm version](https://img.shields.io/badge/npm-1.0.1-red)](https://www.npmjs.com/package/m-web-crawler)
 
 A powerful command-line tool for crawling websites and generating CSV reports. This executable CLI tool efficiently crawls a website starting from a given URL, respecting concurrency limits and page limits.
+
+## Why Use Web Crawler?
+
+Whether you're optimizing for SEO, auditing site structure, or extracting content data, this tool helps you quickly analyze your entire website. Get a complete inventory of all pages, headings, links, and images in a single command—perfect for site audits, broken link detection, and content analysis without writing code.
 
 ## Features
 

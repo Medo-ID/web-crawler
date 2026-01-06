@@ -17,7 +17,20 @@
     "type": "git",
     "url": "https://github.com/Medo-ID/web-crawler"
   },
-  "keywords": [],
+  "keywords": [
+    "web-crawler",
+    "crawler",
+    "web-scraper",
+    "site-crawler",
+    "cli",
+    "node-cli",
+    "typescript",
+    "jsdom",
+    "concurrency",
+    "async",
+    "seo",
+    "csv"
+  ],
   "author": "Mohamed Idaghdour",
   "license": "ISC",
   "type": "module",
